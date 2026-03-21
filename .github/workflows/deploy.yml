@@ -16,7 +16,7 @@ jobs:
         run: yarn
 
       - name: Build
-        run: npx nx build pet-spa
+        run: npx vite build --config vite.config.ts
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
