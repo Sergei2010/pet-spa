@@ -9,6 +9,13 @@ body {
   background-color: #F8F7F5;
 }
 
+.container{
+  margin: 0 auto;
+  max-width: 1780px;
+  width: 100%;
+  padding: 0 30px;
+}
+
 .montserrat-font {
 	font-family: 'Montserrat', sans-serif;
 	font-optical-sizing: auto;
