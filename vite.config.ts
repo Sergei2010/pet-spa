@@ -2,12 +2,12 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
+	base: '/pet-spa/', // ← добавить это
 	root: resolve(process.cwd(), 'src'),
 	build: {
 		outDir: resolve(process.cwd(), 'public'),
 		emptyOutDir: true,
 		reportCompressedSize: true,
-		assetsDir: '.',
 		rollupOptions: {
 			input: resolve(process.cwd(), 'src/index.html')
 		}
