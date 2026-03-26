@@ -53,6 +53,66 @@
   @media (max-width: 767px) {
     margin-bottom: 20px;
   }
+
+  &::before{
+    content: '';
+    z-index: 9;
+
+    display: block;
+    width: 45px;
+    height: 75px;
+
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(calc((326px + 50%) * -1), 0%);
+
+    background-image: url("./../../img/svg/star-medium.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 1199px) {
+      transform: translate(calc((186px + 50%) * -1), 0%);
+      top: 198px;
+    }
+
+    @media (max-width: 767px) {
+      width: 22px;
+      height: 36px;
+      transform: translate(calc((108px + 50%) * -1), 0%);
+      top: 152px;
+    }
+  }
+
+  &::after{
+    content: '';
+    z-index: 9;
+
+    display: block;
+    width: 39px;
+    height: 65px;
+
+    position: absolute;
+    top: 87px;
+    left: 50%;
+    transform: translate(calc(304px + 50%), 0%);
+
+    background-image: url("./../../img/svg/star-small.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 1199px) {
+      transform: translate(calc(158px + 50%), 0%);
+      top: 34px;
+    }
+
+    @media (max-width: 767px) {
+      width: 19px;
+      height: 32px;
+      transform: translate(calc(98px + 50%), 0%);
+      top: 100px;
+    }
+  }
 }
 
 .header-img{
