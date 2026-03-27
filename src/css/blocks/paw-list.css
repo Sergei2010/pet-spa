@@ -1,0 +1,61 @@
+.paw-list__title{
+  margin-bottom: 18px;
+
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+  color: #000;
+
+  @media (max-width: 1199px) {
+    font-size: 32px;
+    line-height: 125%;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+    line-height: 145%;
+  }
+}
+
+.paw-list__list{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #000;
+
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+
+.paw-list__list li{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  @media (max-width: 1199px) {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 767px) {
+
+  }
+}
+
+.paw-list__list li::before{
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+
+  background-image: url("./../../img/svg/paw-bullet.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
