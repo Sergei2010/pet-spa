@@ -20,6 +20,8 @@ body {
   max-width: 1532px;
 }
 
+.container--small{}
+
 .montserrat-font {
 	font-family: 'Montserrat', sans-serif;
 	font-optical-sizing: auto;
