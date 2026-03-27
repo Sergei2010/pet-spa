@@ -9,7 +9,12 @@
 /* Blocks */
 @import './blocks/nav-list.css';
 @import './blocks/button.css';
+@import './blocks/content-block.css';
+@import './blocks/title.css';
+@import './blocks/round-figure-deco.css';
 
 /* Sections */
 @import './sections/nav.css';
 @import './sections/header.css';
+@import './sections/section.css';
+@import './sections/section-treat.css';

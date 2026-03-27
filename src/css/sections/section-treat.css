@@ -1,0 +1,19 @@
+.section-treat__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    column-gap: 40px;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    column-gap: 20px;
+  }
+}
+
