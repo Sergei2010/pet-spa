@@ -13,6 +13,7 @@
 @import './blocks/title.css';
 @import './blocks/round-figure-deco.css';
 @import './blocks/service-block.css';
+@import './blocks/paw-list.css';
 
 /* Sections */
 @import './sections/nav.css';
@@ -20,3 +21,4 @@
 @import './sections/section.css';
 @import './sections/section-treat.css';
 @import './sections/section-service.css';
+@import './sections/section-care.css';
