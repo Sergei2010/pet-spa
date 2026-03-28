@@ -1,0 +1,117 @@
+.slide-item {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-item__img-wrapper {
+  margin-bottom: 46px;
+
+  @media (max-width: 1199px) {
+    margin-bottom: 26px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
+
+.slide-item__text {
+  max-width: 1140px;
+  margin-bottom: 31px;
+
+  font-size: 20px;
+  line-height: 200%;
+  text-align: center;
+  color: var(--333333);
+
+  @media (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 186%;
+  }
+}
+
+.slide-item__name {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 125%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--333333);
+
+  @media (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 154%;
+  }
+
+  @media (max-width: 767px) {
+
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+
+/* SWIPER */
+.swiper-button-prev,
+.swiper-button-next {
+
+  @media (max-width: 1199px) {
+    --swiper-navigation-top-offset: 107px;
+  }
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1 !important;
+  color: var(--333333) !important;
+
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next,
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  color: var(--efbd68) !important;
+
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-size: 12px;
+
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-color: #edb24e;
+
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-inactive-color: var(--333333);
+
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--efbd68);
+}
+
+.swiper-pagination{
+  display: none !important;
+
+  @media (max-width: 767px) {
+    display: block !important;
+    position: static !important;
+    margin-top: 26px;
+  }
+}
