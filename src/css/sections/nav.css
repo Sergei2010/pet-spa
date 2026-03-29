@@ -71,3 +71,25 @@
   }
 }
 
+.nav__mobile{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav__mobile {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: all 0.4s ease;
+  }
+
+  .nav--mobile-open .nav__mobile{
+    max-height: 340px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+}
