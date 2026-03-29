@@ -8,14 +8,16 @@
 
 	<link rel="icon" type="image/x-icon" href="/pet-spa/assets/favicon-sHrH_BNM.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="/pet-spa/assets/apple-touch-icon-BeOA3zIH.png">
-  <link rel="stylesheet" crossorigin href="/pet-spa/assets/index-DWIlBPDg.css">
+  <link rel="stylesheet" crossorigin href="/pet-spa/assets/index-mdCRhe5C.css">
 </head>
 
 <body>
 
 <!-- Section Nav -->
-<nav class="nav">
+<nav class="nav nav--mobile-open">
     <div class="container">
+
+      <!-- nav__row -->
       <div class="nav__row">
         <div class="nav__list">
           <ul class="nav-list">
@@ -48,10 +50,35 @@
           <a href="#" class="button">Book</a>
         </div>
         <div class="nav__mobile-btn">
-          <button class="mobile-nav-btn">
+          <button
+            class="mobile-nav-btn"
+            id="mobile-nav-btn"
+            type="button"
+          >
             <img src="data:image/svg+xml,%3csvg%20width='43'%20height='17'%20viewBox='0%200%2043%2017'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='42.2067'%20height='1'%20fill='black'/%3e%3crect%20y='8'%20width='42.2067'%20height='1'%20fill='black'/%3e%3crect%20y='16'%20width='42.2067'%20height='1'%20fill='black'/%3e%3c/svg%3e" alt="">
           </button>
         </div>
+      </div>
+      <!-- // nav__row -->
+
+      <div
+        class="nav__mobile"
+        id="mobile-nav-panel"
+      >
+        <ul class="nav__mobile-list">
+          <li class="nav__mobile-list__item">
+            <a href="#" class="nav__mobile-list__link">Home</a>
+          </li>
+          <li class="nav__mobile-list__item">
+            <a href="#" class="nav__mobile-list__link">About</a>
+          </li>
+          <li class="nav__mobile-list__item">
+            <a href="#services" class="nav__mobile-list__link">Services</a>
+          </li>
+          <li class="nav__mobile-list__item">
+            <a href="#" class="nav__mobile-list__link">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
 </nav>
@@ -162,7 +189,7 @@
   </section>
 
   <!-- Section Service -->
-  <section class="section section-service">
+  <section class="section section-service" id="services">
     <div class="section-service__content">
       <div class="service-block">
         <div class="service-block__img-wrapper">
@@ -375,7 +402,7 @@
         <div class="footer-nav">
           <h3 class="footer-nav__title">Contact</h3>
           <ul class="footer-nav__list">
-            <li><a href="#">Pawfections@contact.com</a></li>
+            <li><a href="mailto:Pawfections@contact.com">Pawfections@contact.com</a></li>
             <li><a href="#">+012-345-6789</a></li>
             <li><a href="#">9889 Lorem Ipsum street, <br>Pellentesque, CA, USA</a></li>
           </ul>
