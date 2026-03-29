@@ -15,8 +15,10 @@
 <body>
 
 <!-- Section Nav -->
-<nav class="nav">
+<nav class="nav nav--mobile-open">
     <div class="container">
+
+      <!-- nav__row -->
       <div class="nav__row">
         <div class="nav__list">
           <ul class="nav-list">
@@ -49,10 +51,35 @@
           <a href="#" class="button">Book</a>
         </div>
         <div class="nav__mobile-btn">
-          <button class="mobile-nav-btn">
+          <button
+            class="mobile-nav-btn"
+            id="mobile-nav-btn"
+            type="button"
+          >
             <img src="./img/svg/mobile-nav-btn-closed.svg" alt="">
           </button>
         </div>
+      </div>
+      <!-- // nav__row -->
+
+      <div
+        class="nav__mobile"
+        id="mobile-nav-panel"
+      >
+        <ul class="nav__mobile-list">
+          <li class="nav__mobile-list__item">
+            <a href="#" class="nav__mobile-list__link">Home</a>
+          </li>
+          <li class="nav__mobile-list__item">
+            <a href="#" class="nav__mobile-list__link">About</a>
+          </li>
+          <li class="nav__mobile-list__item">
+            <a href="#services" class="nav__mobile-list__link">Services</a>
+          </li>
+          <li class="nav__mobile-list__item">
+            <a href="#" class="nav__mobile-list__link">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
 </nav>
@@ -169,7 +196,7 @@
   </section>
 
   <!-- Section Service -->
-  <section class="section section-service">
+  <section class="section section-service" id="services">
     <div class="section-service__content">
       <div class="service-block">
         <div class="service-block__img-wrapper">
@@ -394,7 +421,7 @@
         <div class="footer-nav">
           <h3 class="footer-nav__title">Contact</h3>
           <ul class="footer-nav__list">
-            <li><a href="#">Pawfections@contact.com</a></li>
+            <li><a href="mailto:Pawfections@contact.com">Pawfections@contact.com</a></li>
             <li><a href="#">+012-345-6789</a></li>
             <li><a href="#">9889 Lorem Ipsum street, <br>Pellentesque, CA, USA</a></li>
           </ul>

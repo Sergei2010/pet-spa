@@ -8,6 +8,7 @@
 
 /* Blocks */
 @import './blocks/nav-list.css';
+@import './blocks/nav-mobile-list.css';
 @import './blocks/button.css';
 @import './blocks/content-block.css';
 @import './blocks/title.css';
